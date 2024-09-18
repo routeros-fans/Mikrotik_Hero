@@ -1,26 +1,26 @@
 # Hardening MikroTik RouterOS
 
-<li>
-<ul>Customized RouterOS Configurations</ul>
-<ul>RouterOS Firewall</ul>
-</li>
+<ul>
+<li>Customized RouterOS Configurations</li>
+<li>RouterOS Firewall</li>
+</ul>
 
 ## Customized RouterOS Configurations
 
-<li>
-<ul>Login Services</ul>
-<ul>MAC WinBox</ul>
-<ul>RoMON</ul>
-<ul>Login Credentials</ul>
-<ul>Router Interface</ul>
-<ul>LCD touch screen</ul>
-<ul>Neighbor Discovery</ul>
-<ul>BTest Server</ul>
-<ul>NTP Clock Synchronization</ul>
-<ul>Logging</ul>
-<ul>Configuration Backup</ul>
-<ul>SNMP</ul>
-</li>
+<ul>
+<li>Login Services</li>
+<li>MAC WinBox</li>
+<li>RoMON</li>
+<li>Login Credentials</li>
+<li>Router Interface</li>
+<li>LCD touch screen</li>
+<li>Neighbor Discovery</li>
+<li>BTest Server</li>
+<li>NTP Clock Synchronization</li>
+<li>Logging</li>
+<li>Configuration Backup</li>
+<li>SNMP</li>
+</ul>
 
 
 
@@ -41,10 +41,10 @@
 Login Credentials: 
 {System->Users}
 <ul>
-<ul> Rename default admin account</ul>
-<ul> Strong password policy</ul>
-<ul> Set the right permission (group) to router users</ul>
-<ul> Backup login account</ul>
+<li> Rename default admin account</li>
+<li> Strong password policy</li>
+<li> Set the right permission (group) to router users</li>
+<li> Backup login account</li>
 </ul>
 
 ### Router Interface
@@ -121,15 +121,15 @@ Allows multiple clients to be on the same network,but not send traffic to each o
 
 
 ## Security Recommendations
-
-<ul> Disable unused ports and services on router
-<ul> Strong password policy for router users and allow to remote from specific network
-<ul> Disable discovery interfaces on outside/WAN ports
-<ul> Clock should be accurate synchronize
-<ul> Enable SysLog and SNMP for monitoring the router
-<ul> Separate network for each LAN and Server
-<ul> Used Address list to group all address for used in Firewall
- Used Action=Jump to organized the Firewall rules and better performance
- Used Firewall to protect router itself, inside network and the Servers
-
+<ul>
+<li> Disable unused ports and services on router</li>
+<li> Strong password policy for router users and allow to remote from specific network</li>
+<li> Disable discovery interfaces on outside/WAN ports</li>
+<li> Clock should be accurate synchronize</li>
+<li> Enable SysLog and SNMP for monitoring the router</li>
+<li> Separate network for each LAN and Server</li>
+<li> Used Address list to group all address for used in Firewall</li>
+<li> Used Action=Jump to organized the Firewall rules and better performance</li>
+<li> Used Firewall to protect router itself, inside network and the Servers</li>
+</ul>
 
