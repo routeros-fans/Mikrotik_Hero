@@ -27,7 +27,15 @@
 <li>Updating RouterBoard</li>
 <li>Disable Mac Server</li>
 <li>Disable Neighbor Discovery</li>
+<li>Disable Serial Port</li>
 </ul>
+
+
+
+
+### Disable Serial Port
+
+    /system console disable [find where port=serial0]
 
 
 
@@ -99,6 +107,8 @@ Disable all unused interfaces on your router, in order to decrease unauthorized 
 ### LCD touch screen
 Some RouterBOARDs have LCD module for informational purpose, set pin or disable it.
 
+    /lcd set enabled=no
+    /lcd set touch-screen=disabled
 
 
 ### Neighbor Discovery: 
