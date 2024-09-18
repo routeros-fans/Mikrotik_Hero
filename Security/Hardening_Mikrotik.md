@@ -24,6 +24,9 @@
 <li>SNMP</li>
 <li>Removing unsed packages</li>
 <li>Changing Service Port</li>
+<li>Updating RouterBoard</li>
+<li>Disable Mac Server</li>
+<li>Disable Neighbor Discovery</li>
 </ul>
 
 
@@ -153,10 +156,32 @@ before 6.31 version:
 
 
 
+### Updating RouterBoard 
+
+    /system routerboard print
+
+
+    /system routerboard upgrade
+
 
 ### Wireless Client Isolation
 Allows multiple clients to be on the same network,but not send traffic to each other.
 
+
+
+### Disable Mac Server
+
+    /tool mac-server set \allowed-interface-list=none
+
+
+    /tool mac-server mac-winbox set \allowed-interface-list=none
+
+
+
+### Disable Neighbor Discovery
+
+
+    /tool mac-server mac-winbox set \allowed-interface-list=none
 
 
 ### SNMP: 

@@ -3,6 +3,8 @@ this check list contains scripts and commands
 
 
 - [ ] Updating RouterOS Packeges 
+- [ ] Updating RouterOS
+- [ ] Updating RouterBoard
 - [ ] Disabling Unsed Interfaces
 - [ ] Disabling Console Port
 - [ ] Disabling Unsed Services
@@ -19,3 +21,11 @@ this check list contains scripts and commands
 - [x] all tasks are complete :tada:
 
 
+
+
+
+
+
+
+/system routerboard print
+/system routerboard upgrade
