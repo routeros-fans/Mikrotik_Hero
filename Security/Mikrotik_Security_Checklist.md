@@ -2,6 +2,20 @@
 this check list contains scripts and commands
 
 
-- [x] #739
-- [ ] 
+- [ ] Updating RouterOS Packeges 
+- [ ] Disabling Unsed Interfaces
+- [ ] Disabling Console Port
+- [ ] Disabling Unsed Services
+- [ ] Disabling Unsed Packeges
+- [ ] Changing Services Ports
+- [ ] Writing ACL for accessing Router
+- [ ] Block Winbox Discovery
+- [ ] Block Neighbor Discovery
+- [ ] Change Default Admin Username & Password
+- [ ] Strong Password policy
+- [ ] NTP
+- [ ] SNMP
+- [ ] Logging
 - [ ] all tasks are complete :tada:
+
+
