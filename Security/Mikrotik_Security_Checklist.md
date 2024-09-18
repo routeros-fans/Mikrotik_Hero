@@ -16,6 +16,6 @@ this check list contains scripts and commands
 - [ ] NTP
 - [ ] SNMP
 - [ ] Logging
-- [ ] all tasks are complete :tada:
+- [x] all tasks are complete :tada:
 
 
