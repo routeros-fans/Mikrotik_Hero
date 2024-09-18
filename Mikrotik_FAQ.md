@@ -94,3 +94,108 @@ Drag and drop lower version then got to <code>System</code>--> <code>Package Lis
     ip dhcp-client> print detail
 
 </p>
+
+## how to block windows update ?
+
+    /ip firewall filter
+    add action=drop chain=forward comment="Windows Update" content=windowsupdate.microsoft.com
+    add action=drop chain=forward comment="Windows Update" content=*.windowsupdate.microsoft.com
+    add action=drop chain=forward comment="Windows Update" content=*.update.microsoft.com
+    add action=drop chain=forward comment="Windows Update" content=*.windowsupdate.com
+    add action=drop chain=forward comment="Windows Update" content=download.windowsupdate.com
+    add action=drop chain=forward comment="Windows Update" content=download.microsoft.com
+    add action=drop chain=forward comment="Windows Update" content=*.download.windowsupdate.com
+    add action=drop chain=forward comment="Windows Update" content=wustat.windows.com
+    add action=drop chain=forward comment="Windows Update" content=ntservicepack.microsoft.com
+    add action=drop chain=forward comment="Windows Update" content=stats.microsoft.com
+
+
+<p>Note:if a user establish a vpn connection this rule is useless!!!</p>
+<p>Note:you can also add more subdomains</p>
+
+
+## How to update mikrotik?
+
+check for updates just with one script and install it
+
+after 6.31 version:
+
+    /system package update
+    Check-for-updates once
+    : delay 1s;
+    : If ([get status] = "New version is available") do= {install}
+
+
+before 6.31 version:
+
+    System package update
+    Check-for-updates
+    : delay 1s;
+    : if ( [get current-version] != [get latest-version]) do={ upgrade }
+
+## How to backup RouterOS Configuration Files?
+
+
+save Configuration
+
+    /system backup save filename=[backup_filename.backup]
+
+Load Configuration
+
+    /system backup load filename=[backup_filename.backup]
+
+
+
+## How to Backup Mikrotik Settings?
+
+<ul>
+<li>Web Interface: Login > Files > Backup (optional: name & password).</li> 
+<li>Winbox: Connect > Files > New > Backup (optional: name & password).</li> 
+<li>Terminal: Upload backup file (if needed).</li> 
+<li>Terminal: cd /files (navigate to backup location).</li> 
+<li>Terminal: /system backup load filename=[backup_filename.backup].</li> 
+<li>(Terminal & Winbox): Confirm & enter password (if needed).</li> 
+<li>(Terminal & Winbox): Monitor restoration progress.</li> 
+<li>(Terminal & Winbox): Download backup for safekeeping.</li> 
+<li>(Terminal & Winbox): Reboot (unless using dont-reboot option in terminal).</li> 
+<li>Store backup securely (separate from router).</li> 
+</ul>
+
+
+
+
+
+## How to Restore the Backup Mikrotik Terminal?
+
+<ul>
+<li>Access the MikroTik terminal.</li> 
+<li>Upload backup file (if needed).</li> 
+<li>Use /system backup load filename=[backup_filename.backup].</li> 
+<li>Confirm and enter the password (if needed).</li> 
+<li>Monitor the restoration process.</li> 
+<li>Reboot (unless using dont-reboot option).</li> 
+</ul>
+
+
+
+## How to see RouterOs Configuartion in plain text?
+
+backup the config file without encryption.
+
+    /system backup save name=MikroTikBackup dont-encrypt=yes Saving system configuration
+
+view config file in terminal
+
+    /export file= desired backup name.cfg
+
+
+
+
+## How to Reset Mikrotik Configuration Command?
+
+There are two main ways to reset the MikroTik configuration, using the command line:
+<ul>
+<li>Software Reset (Preferred): <code>/system reset-configuration </code></li> 
+<li>Hardware Reset Button: Less precise, consult your device’s manual for specific instructions<li> 
+</ul>
+

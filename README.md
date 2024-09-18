@@ -1,5 +1,5 @@
 # Mikrotik_Hero
-a great mega collection of Mikrotiks One liners,Cli Commands,Cool Tricks , Cheatsheets and also including fun and usefull scripts.
+a great mega collection of Mikrotiks One liners,Cli Commands,cli , Cheatsheets usefull scripts and hardening and security tips.
 
 
 <p align="center">
@@ -15,9 +15,9 @@ a great mega collection of Mikrotiks One liners,Cli Commands,Cool Tricks , Cheat
 |---|---|---|
 |Cli-Commands.md|Giant list of cli Tricks and How tos| <a href="Cli-commands.md">Link</a>|
 |Mikrotik_FAQ.md|a collection of FAQ(Frequently Asked Questions)| <a href="Mikrotik_FAQ.md">Link</a>|
-|Router-os scripting |learn scripting in mikrotik,some practical scripts|<a href="/Scripting/readme.md">Link</a>|
+|Router-os scripting |learn scripting and some practical scripts|<a href="/Scripting/readme.md">Link</a>|
 |Mikrotik Educational Materials|open-source and free educational material including slides,notes|<a href="/Mikrotik_Certifications/reame.md">Link</a>|
-|Mikrotik_Security.md|about Firewalls and Hardenings| <a href="/Security/Mikrotik_Security.md">Link</a>|
+|Mikrotik Security|about Firewalls and Hardenings| <a href="/Security">Link</a>|
 
 
 
@@ -35,6 +35,9 @@ This project is licensed under the Creative Commons Zero v1.0 Universal license.
 Creative Commons Zero v1.0 Universal
 
 <img src="/img/88x31.png" alt="Creative Commons Zero v1.0 Universal">
+
+
+
 
 ## Contributing
 
